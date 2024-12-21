@@ -6,7 +6,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    background-image: url('../static/texture.jpg');
+    background-repeat: repeat; /* Повторяет текстуру */
+    background-size: cover;    /* Размер текстуры остается исходным */
+}
+
+.footer-container {
+    max-width: 100%; /* Растянуть контейнер на всю ширину */
+}
+
+footer {
+    background-color: #343a40; /* Темный фон */
+    color: white; /* Белый текст */
 }
 
 .container {
@@ -37,8 +48,8 @@ textarea {
 }
 
 button {
-    background: #007bff;
-    color: white;
+    background:rgb(138, 43, 226);
+    color:rgb(0, 255, 255);
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -46,7 +57,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background:rgb(138, 43, 226);
 }
 
 ul {
