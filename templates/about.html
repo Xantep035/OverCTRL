@@ -9,42 +9,62 @@
     <title>About OverCTRL</title>
 </head>
 <body>
-    <!-- Меню навигации -->
-    <nav class="navbar fixed-top navbar-light bg-light">
+    <!-- Меню -->
+    <nav class="navbar fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">OverCTRL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/about">About</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#" style="color:rgb(0, 255, 255);"><img src="..\static\Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">OverCTRL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:rgb(0, 255, 255);">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item" style="background-color:rgb(138, 43, 226);">
+                <a class="nav-link active" aria-current="page" href="/" style="color: white">Главная</a>
+              </li>
+              <li class="nav-item" style="background-color:rgb(138, 43, 226);">
+                <a class="nav-link" href="/about" style="color: white">About</a>
+              </li>
+          </div>
         </div>
-    </nav>
-
+      </nav>
     <!-- Основной контент -->
     <div class="container mt-5">
-        <p>
-            OverCTRL — тестовое веб-приложение, для хранения заметок.
-            Позволяет добавлять, просматривать и удалять заметки. Интерфейс <strike>отсутствует</strike> прост и интуитивно понятен :D
-        </p>
-        <p>
-            Используемые технологии:
-            <ul>
-                <li>Backend: Python + Flask</li>
-                <li>Frontend: HTML + CSS (и немного Bootstrap'а)</li>
-                <li>База данных: SQLite</li>
-            </ul>
-        </p>
-        <a href="/" class="btn btn-primary">На главную</a>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    OverCTRL — минималистичный и функциональный веб-сервис для хранения заметок. Разработан с акцентом на простоту и эффективность. Интерфейс <strike>отсутствует</strike> прост и интуитивно понятен :D
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Используемые технологии:
+                    <ul>
+                        <li>Backend: Python + Flask</li>
+                        <li>Frontend: HTML + CSS</li>
+                        <li>База данных: SQLite</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-12" style="padding-bottom: 20px; padding-left: 200px">
+                <a><img src="..\static\QR.png" width="175" height="175"></a>
+            </div>
+        </div>
+        <a href="/" class="btn" style="background-color:rgb(138, 43, 226); color: white">На главную</a>
     </div>
+    <!-- Подвал -->
+    <footer class="bg-dark py-0 pt-4 fixed-bottom">
+    <div class="container-fluid footer-container" style="padding-bottom: 0.5px">
+            <div class="col-md-6" style="padding-left: 25px">
+                <h5>Developers:</h5>
+                <a style="padding-right: 10px">Манахов Р.Ю.</a><a>Мозжухин С.О.</a>
+                <a style="padding-right: 10px">Веселков А.А.</a><a>Ермаков И.Д.</a>
+                <a style="padding-right: 15px">Каленов И.О.</a><br>
+            </div>
+        <div class="text-center">
+            <p>&copy; 2024 OverCTRL. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
